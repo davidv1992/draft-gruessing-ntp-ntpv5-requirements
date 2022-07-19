@@ -4,12 +4,12 @@
 
 Network Time Protocol                                       J. Gruessing
 Internet-Draft                               Nederlandse Publieke Omroep
-Intended status: Informational                                4 May 2022
-Expires: 5 November 2022
+Intended status: Informational                              19 July 2022
+Expires: 20 January 2023
 
 
                     NTPv5 use cases and requirements
-             draft-gruessing-ntp-ntpv5-requirements-latest
+                draft-ietf-ntp-ntpv5-requirements-latest
 
 Abstract
 
@@ -44,7 +44,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 5 November 2022.
+   This Internet-Draft will expire on 20 January 2023.
 
 Copyright Notice
 
@@ -320,9 +320,9 @@ Table of Contents
    [I-D.ietf-ntp-roughtime]
               Malhotra, A., Langley, A., Ladd, W., and M. Dansarie,
               "Roughtime", Work in Progress, Internet-Draft, draft-ietf-
-              ntp-roughtime-05, 24 May 2021,
+              ntp-roughtime-06, 7 June 2022,
               <https://datatracker.ietf.org/doc/html/draft-ietf-ntp-
-              roughtime-05>.
+              roughtime-06>.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -376,7 +376,5 @@ Author's Address
 
    James Gruessing
    Nederlandse Publieke Omroep
-   Postbus 26444
-   1202 JJ Hilversum
    Netherlands
    Email: james.ietf@gmail.com
