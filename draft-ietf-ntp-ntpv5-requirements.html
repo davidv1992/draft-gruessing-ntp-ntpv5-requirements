@@ -10,15 +10,14 @@
        This document describes the use cases, requirements, and considerations that
 should be factored in the design of a successor protocol to supersede version 4
 of the NTP protocol   presently referred to as NTP version 5
-("NTPv5"). This document is non-exhaustive and does not in its current version
-represent working group consensus. 
+("NTPv5"). 
     ' name="description">
-<meta content="xml2rfc 3.13.0" name="generator">
+<meta content="xml2rfc 3.13.1" name="generator">
 <meta content="Internet-Draft" name="keyword">
 <meta content="draft-ietf-ntp-ntpv5-requirements-latest" name="ietf.draft">
 <!-- Generator version information:
-  xml2rfc 3.13.0
-    Python 3.10.4
+  xml2rfc 3.13.1
+    Python 3.10.5
     appdirs 1.4.4
     ConfigArgParse 1.5.3
     google-i18n-address 2.5.2
@@ -641,6 +640,11 @@ hr {
   font-weight: bold;
   min-width: 7em;
 }
+.references dt:target::before {
+  content: "⇒";
+  width: 15px;
+  margin: 0 10px 0 -25px;
+}
 .references dd {
   margin-left: 8em;
   overflow: auto;
@@ -1030,11 +1034,11 @@ svg :is([stroke="fill"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">NTPv5 use cases and requirements</td>
-<td class="right">July 2022</td>
+<td class="right">August 2022</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Gruessing</td>
-<td class="center">Expires 20 January 2023</td>
+<td class="center">Expires 12 February 2023</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1047,12 +1051,12 @@ svg :is([stroke="fill"], [fill^="#fff"]) {
 <dd class="internet-draft">draft-ietf-ntp-ntpv5-requirements-latest</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2022-07-19" class="published">19 July 2022</time>
+<time datetime="2022-08-11" class="published">11 August 2022</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2023-01-20">20 January 2023</time></dd>
+<dd class="expires"><time datetime="2023-02-12">12 February 2023</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1068,8 +1072,7 @@ svg :is([stroke="fill"], [fill^="#fff"]) {
 <p id="section-abstract-1">This document describes the use cases, requirements, and considerations that
 should be factored in the design of a successor protocol to supersede version 4
 of the NTP protocol <span>[<a href="#RFC5905" class="xref">RFC5905</a>]</span> presently referred to as NTP version 5
-("NTPv5"). This document is non-exhaustive and does not in its current version
-represent working group consensus.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+("NTPv5").<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note" id="section-note.1">
       <h2 id="name-note-to-readers">
@@ -1098,7 +1101,7 @@ represent working group consensus.<a href="#section-abstract-1" class="pilcrow">
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 20 January 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 12 February 2023.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1226,7 +1229,10 @@ represent working group consensus.<a href="#section-abstract-1" class="pilcrow">
 <p id="section-1-1">NTP version 4 <span>[<a href="#RFC5905" class="xref">RFC5905</a>]</span> has seen active use for over a decade, and within
 this time period the protocol has not only been extended to support new
 requirements but has also fallen victim to vulnerabilities that have been used
-for distributed denial of service (DDoS) amplification attacks.<a href="#section-1-1" class="pilcrow">¶</a></p>
+for distributed denial of service (DDoS) amplification attacks. In order to
+advance the protocol and address these known issues alongside add capabilities
+for future usage this document defines the current known and applicable use
+cases in existing NTPv4 deployments and defines requirements for the future.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <div id="notational-conventions">
 <section id="section-1.1">
         <h3 id="name-notational-conventions">

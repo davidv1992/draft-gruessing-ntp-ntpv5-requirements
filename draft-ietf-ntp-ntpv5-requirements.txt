@@ -4,8 +4,8 @@
 
 Network Time Protocol                                       J. Gruessing
 Internet-Draft                               Nederlandse Publieke Omroep
-Intended status: Informational                              19 July 2022
-Expires: 20 January 2023
+Intended status: Informational                            11 August 2022
+Expires: 12 February 2023
 
 
                     NTPv5 use cases and requirements
@@ -16,9 +16,7 @@ Abstract
    This document describes the use cases, requirements, and
    considerations that should be factored in the design of a successor
    protocol to supersede version 4 of the NTP protocol [RFC5905]
-   presently referred to as NTP version 5 ("NTPv5").  This document is
-   non-exhaustive and does not in its current version represent working
-   group consensus.
+   presently referred to as NTP version 5 ("NTPv5").
 
 Note to Readers
 
@@ -44,7 +42,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 January 2023.
+   This Internet-Draft will expire on 12 February 2023.
 
 Copyright Notice
 
@@ -94,7 +92,11 @@ Table of Contents
    within this time period the protocol has not only been extended to
    support new requirements but has also fallen victim to
    vulnerabilities that have been used for distributed denial of service
-   (DDoS) amplification attacks.
+   (DDoS) amplification attacks.  In order to advance the protocol and
+   address these known issues alongside add capabilities for future
+   usage this document defines the current known and applicable use
+   cases in existing NTPv4 deployments and defines requirements for the
+   future.
 
 1.1.  Notational Conventions
 
